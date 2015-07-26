@@ -17,6 +17,11 @@
     </nav>
     <div class=container-fluid>
       <div class="container">
+        <% if notice %>
+          <div class="alert alert-success">
+            <%= notice %>
+          </div>
+        <% end %>
         <%= yield %>
       </div>
     </div>
