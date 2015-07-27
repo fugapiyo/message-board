@@ -28,7 +28,7 @@
       <div class="form-group">
         <%= f.label "年齢", :class => "col-sm-1 control-label" %>
         <div class="col-sm-3">
-          <%= f.number_field :age, :class => "form-control", min:"0", max:"100" %>
+          <%= f.number_field :age, :class => "form-control", min: Message::AGE_GE, max: Message::AGE_LE %>
         </div>
       </div>
       
